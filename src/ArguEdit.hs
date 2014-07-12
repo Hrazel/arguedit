@@ -71,10 +71,10 @@ toHeader ahtv@(ArgHeaderThesisView common )      = do
     return $ ArgHeader (meta) $ Thesis $ Text text
 
 toHeader ahdefv@(ArgHeaderDefView common specific)      = do
-    definiendum <- getText $ tview  common
-    definiens <- entryGetText $ term specific -- getDefiniens specific
+    definiens <- getText $ tview  common
+    definiendum <- entryGetText $ term specific -- getDefiniens specific
     meta <-  (getMeta common) 
-    return $    ArgHeader (meta) $ Definition (Term definiens) (Descr definiendum)
+    return $    ArgHeader (meta) $ Definition (Term definiendum) (Descr  definiens)
 
 toHeader ahtv@(ArgHeaderCntrExmplView common )   = do 
     text <- getText $ tview  common
@@ -610,9 +610,9 @@ newDefinition ioRefioArgData thisId         = do
     case maybeTree of
         Just (Node (v,nid) ch) -> do
            let target_box = tbox $ commonParts $ v
-           loadArguComp target_box ioRefioArgData thisId (ArgComp (ArgHeader (Meta [Status Initial]) (Definition (Term "Definiens") (Descr "Definiendum"))) [])
+           loadArguComp target_box ioRefioArgData thisId (ArgComp (ArgHeader (Meta [Status Initial]) (Definition (Term "Definiendum") (Descr "Definiens"))) [])
         Nothing ->  do
-           loadArguComp org_box ioRefioArgData thisId (ArgComp (ArgHeader (Meta [Status Initial]) (Definition (Term "Definiens") (Descr "Definiendum"))) [])
+           loadArguComp org_box ioRefioArgData thisId (ArgComp (ArgHeader (Meta [Status Initial]) (Definition (Term "Definiendum") (Descr "Definiens"))) [])
 
 
 
