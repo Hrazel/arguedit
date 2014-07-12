@@ -38,6 +38,7 @@ import Specification.ArguModel as ArguModel
 
 
 --View
+{-| A graphical element of the argumentation consists of gtk parts such as boxes, textviews, entry fields adn so on. This structures binds them together deviding into two categories. The common parts are those that all elements have in common where GtkDefSpecific is specific to the definition element.-}
 data GtkParts = 
         GtkCommonParts{ 
             ioRefHimg::IORef HeaderImage,
@@ -53,7 +54,7 @@ data GtkParts =
 
 instance Show GtkParts where
     show gtkParts = "default_gtkparts"
-
+{-| The header's image is a structure to combine information about the element button. -}
 data HeaderImage=HeaderImage{
         imgLetter::ImgLetter,
         imgColors::[ImgColor],
@@ -64,20 +65,21 @@ data HeaderImage=HeaderImage{
 instance Show HeaderImage where
     show (HeaderImage letter colors size) = "HeaderImage " ++ show letter ++ " "++ show (take 10 colors) ++" "++ show size
 
+{-| updateMeta is function to be run in the IO monade updating the meta information of an element which is placed in a static variable. -}
 updateMeta cParts meta = do
     let refOnMeta = ioRefMeta cParts
     writeIORef refOnMeta meta
-
+{-| Get the meta value from the static variable stored in the GtkParts object. -}
 getMeta cParts = do
     let refOnMeta = ioRefMeta cParts
     meta <- readIORef refOnMeta
     return meta
-
+{-| Get the header's image from a GtkParts' static variable.-}
 getHimg cParts = do
    let refOnHimg = (ioRefHimg cParts)
    himg <- readIORef refOnHimg    
    return himg
-
+{-| An OnClick event triggers this function to change the current image to the next one available. -}
 nextImage cParts = do
    himg <- getHimg cParts
    let newHimg = HeaderImage (imgLetter himg) (tail (imgColors himg)) (imgSize himg)
@@ -98,6 +100,7 @@ thisImage cParts = do
    return img
 -}
 
+{-|Builds a filepath and filename for given HeaderImage by its letter and color. -}
 fileNameFromHeaderImage himg= 
    -- ("this Image/new filename computed: "
     ("../pics/letters/png/letter_"
@@ -105,10 +108,11 @@ fileNameFromHeaderImage himg=
     ++"_"
     ++ toLower (show (head (imgColors himg)))
     ++ ".png") 
-
+{-|Convenience function to lower the case of a string. -}
 toLower str = map Char.toLower str
 
 --View
+{-|ArgHeaderView is the graphical representation of element in the argumentation. -}
 data ArgHeaderView =
             EmptyView
             |ArgHeaderThesisView    {commonParts    ::GtkParts}
@@ -187,6 +191,8 @@ newHeaderImage filename size = do
 -}
 
 --newRow :: Image -> TextView -> IO HBox
+
+{-| The elements are organized in rows and columns. This fct. creates a new row. -}
 newRow = do
     row <- hBoxNew False 0
 --    header_wrap <- newCol
@@ -196,6 +202,7 @@ newRow = do
     return row
 
 
+{-| The elements are organized in rows and columns. This fct. creates a new column. -}
 newCol = do
     col <- vBoxNew False 0
 --    (w,h) <- widgetGetSizeRequest col
@@ -203,6 +210,7 @@ newCol = do
     widgetShowAll col
     return col
 
+{-|Some images belong to the systems stock. Basically the strings New, Open, Save, ... are mapped to stock plus string here which are system known values.-}
 getStockIcon iconName = 
     case iconName of
         "New"       -> Just stockNew
@@ -216,7 +224,7 @@ getStockIcon iconName =
         "Help"      -> Just stockHelp
         "Execute"   -> Just stockExecute
 
-
+{-|Finally gtk parts must be added to a container such as box. This function adds a child to be contained.-}
 addToBox :: (BoxClass box, WidgetClass child) => box -> child -> Packing -> IO ()
 addToBox box child packing = do
     boxPackStart box child packing 2
@@ -233,6 +241,7 @@ addToBoxTLFromList target_box list =
      mapM_ (\ widget -> ( addToBoxTL target_box widget PackNatural )) list
 -}
 
+{-|Create a new textbox represented as a triplet of outer column, innerbox and textview element for more convenient access. -}
 newTextBox label_string text_string = do
     th_box <- newCol
     children_box <- newCol
@@ -252,6 +261,7 @@ newTextBox label_string text_string = do
 
 
 -- View
+{-|Create a definition box with term to be defined and its defining description.-}
 newDefBox term textstring = do
     term_edit <- entryNew
     entrySetText term_edit term
@@ -290,6 +300,7 @@ install_main_menu interface = do
     boxPackStart parent_box toolbar PackNatural 0
 
 -- View
+{-Print an action to the std. out. -}
 prAct :: ActionClass self => self -> IO (ConnectId self)
 prAct a = onActionActivate a $ do name <- actionGetName a
                                   accelpathIO <- actionGetAccelPath a
@@ -299,6 +310,7 @@ prAct a = onActionActivate a $ do name <- actionGetName a
                                   putStrLn ("Action Name: " ++ name ++ " ActionAccelpath: " ++ accelPath)
 
 -- View
+{-| Create the main gui from a glade file and installing a menu to start with. -}
 createMainGUI actionGroupCreate = do
     builder <- builderNew
     builderAddFromFile builder "./Gtk/arguedit_final.glade"
@@ -315,13 +327,15 @@ createMainGUI actionGroupCreate = do
     widgetShowAll main_window
 
 -- View
+{-| Toggle the visibility of the element's row -}
 toggleShowHideView EmptyView = do return ()
 toggleShowHideView v = do
          let therow = row (commonParts v)
          toggleVisibility therow
          return ()
 
--- View 
+-- View
+{-| Wrapper for the builtin show and hide functionality. -} 
 toggleVisibility :: WidgetClass a => a -> IO ()
 toggleVisibility widget = do
     visibility <- Graphics.UI.Gtk.get widget widgetVisible
@@ -329,6 +343,7 @@ toggleVisibility widget = do
         False -> widgetShow widget
         _     -> widgetHide widget
 
+{-| Begin viewing everything by initilizing the GTK components of the gu| Begin viewing the everything by initilizing the GTK components of the gui. -}
 viewMain actionGroupCreate = do
     rcParse "./Gtk/gtkrc-2.0-arguedit"     -- STYLE
     initGUI                                 -- GTK INIT
@@ -341,7 +356,7 @@ viewIconSizeDefinition = 28 :: Int
 viewIconSizeDefault = 25 :: Int
 viewIconSizeMini = 5 :: Int
 -- View
-
+{-| Constant string to hold the menu structure. For convenience reasons not in a separated file. -}
 uiDecl=  "<ui>\
 \           <menubar>\
 \            <menu action=\"NES\">\
