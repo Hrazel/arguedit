@@ -1,0 +1,5 @@
+THESIS[Status Initial]: Closed Software ist sicherer
+   PREMISE[Status Initial]: Geheime Algorithmen können angewandt werden
+   DEFINE[Status Initial]: Closed Software   = Software deren Quellen prinzipiell vor den Augen der Öffentlichkeit verborgen wird
+   PREMISE[Status Initial]: Geheime algorithmen sind schwere zu knacken
+   LOGIC[Status Initial]: Bestätigung der Hypothese

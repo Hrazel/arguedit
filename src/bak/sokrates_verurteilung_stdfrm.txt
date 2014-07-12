@@ -1,0 +1,10 @@
+THESIS[Status Initial]: Sokrates wurde zu Unrecht verurteilt
+   PREMISE[Status Initial]: Anklage: Sokrates frevelt, in dem er nicht an Götter glaubt, sondern an Dämonisches
+   PREMISE[Status Initial]: Dämonisches ist etwas von Dämonen
+   PREMISE[Status Initial]: Dämonen sind Kinder von Göttern
+   PREMISE[Status Initial]: Man kann nicht an Dinge von etwas anderem glauben, ohne auch an dieses Andere zu glauben
+   PREMISE[Status Initial]: Paraphrasierte Anklage: Sokrates frevelt, indem er nicht an Götter, sondern an Götter glaubt
+   PREMISE[Status Initial]: Etwas kann nicht in einer Hinsicht sein und in genauer dieser Hinsicht gerade nicht sein
+   PREMISE[Status Initial]: Niemand ist aufgrund einer sich selbst widersprechenden Anklage zu verurteilen
+   PREMISE[Status Initial]: Sokrates wurde aufgrund der genannten Anklage zum Tode verurteilt
+   LOGIC[Status Initial]: Sokrates wurde zu Unrecht verurteilt

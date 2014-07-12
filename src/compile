@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DEFAULT_BIN="ArguEdit.bin"
+
+ghc --make -static Main.hs -o $DEFAULT_BIN -outputdir ../build/
+

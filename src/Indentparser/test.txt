@@ -1,0 +1,13 @@
+T: EinWortnur 
+    T: EinWortnur2 
+    T: EinWortnur3 
+    T: EinWortnur4 
+    T: EinWortnur5 
+    T: EinWortnur6 
+    T: EinWortnur7 
+T: ZweiWortnur 
+    D1: Freesoftware .is Freedom respective Software
+    D2: OpenSourceSoftware .is Software
+    Rational
+    Counterexample
+    Logic

@@ -1,0 +1,113 @@
+THESIS[Status Falsified]: freie Software beeinträchtigt Y
+   DEFINE[Status Verified]: Werbung    AS Das Schmackhaft-Machen eines kaufbaren Gutes
+   PREMISE[Status Verified]: GNU kostenlos und Verbreitungs-Dienst unter Verwendung von Y  sind Erfolgreich
+      LOGIC[Status Initial]: Kosten für Y sind gedeckt
+   PREMISE[Status Valid]: Werbung gehört zu Y
+   PREMISE[Status Verified]: Verbreitungs-Dienst nicht erfolgreich
+      LOGIC[Status Initial]: Y war nicht notwendig
+   PREMISE[Status Falsified]: Y ist an sich gut
+      PREMISE[Status Verified]: Y muss in Bezug auf Software immer angewendet werden
+      PREMISE[Status Initial]: Freie Software verbreitet sich durch Weitergabe (z.B. über das Internet)
+      PREMISE[Status Initial]: Y verliert den eigenen Zweck wenn Software "befreit" wird
+         PREMISE[Status Initial]: Was etwas an sich gutes schlecht werden lässt, kann nicht gut sein
+            LOGIC[Status Initial]: Freie Software ist schlecht
+         PREMISE[Status Initial]: Was den eigenen Zweck verlieren kann, kann nicht an sich gut sein
+            LOGIC[Status Initial]: Prämisse Y an sicht gut  ist im Widerspruch
+   LOGIC[Status Verified]: Werbung nicht notwendig oder nicht beeinträchtigt
+THESIS[Status Falsified]: Freie Software ist kostenlos
+   DEFINE[Status Verified]: Freie Software (nach FSF)   AS Software, die Ausübun vier bestimmter Freiheiten ermöglicht. 
+      DEFINE[Status Verified]: Freiheit 0.  AS Die Freiheit ein Programm zu jeglichem Zweck ausführen zu dürfen.
+      DEFINE[Status Verified]: Freiheit 1.  AS Die Freiheit das Programm studieren und ändern zu dürfen, um es tun zu lassen, was Sie sich von dem Programm wünschen. Die Möglichkeit der Einsichtnahme in den Quellecode ist dazu eine Vorbedingung. 
+      DEFINE[Status Verified]: Freiheit 2.  AS Die Freiheit zur Weitergabe von Kopien, damit Sie ihrem Nachbarn helfen können.
+      DEFINE[Status Verified]: Freiheit 3.  AS Die Freiheit zur Weitergabe der modifizierten Versionen an andere. Zugriff auf den Quelltext ist hierzu Vorbedingung.
+   DEFINE[Status Valid]: Freie Software (JMS)   AS Software, mit der die Freiheit des Menschen bezweckt ist
+   PREMISE[Status Falsified]: Zitate: "give away free","just like air"
+      COUNTEREXAMPLE[Status Verified]: "people often interpret them as saying that copies of GNU should always be distributed at little or no charge. That was never the intent." "The intention was that nobody would have to pay for *permission* to use the GNU system. "
+      LOGIC[Status Verified]: Freie Software nicht unbedingt kostenlos
+   LOGIC[Status Falsified]: These bestätigt
+THESIS[Status Verified]: Stand der Technik ist besser als er ist, wenn es mehr freie Software gäbe
+   PREMISE[Status Initial]: FS ist Codeverdopplung
+   PREMISE[Status Initial]: Verschenken worfür Resourcen aufgewndet wurden
+   PREMISE[Status Initial]: Lohndumping bei der konkurrenz
+   LOGIC[Status Initial]: Stand wäre sogar schlechter
+THESIS[Status Verified]: Es gibt reale Schäden durch proprietäre Software
+   PREMISE[Status Initial]: Propietäre Software sorgt dafür, dass in der Menge aller Menschen Software (Teile) mehrfach produziert werden müssen
+   PREMISE[Status Initial]: Entwicklungs-Kosten < Bedarfs-Einnahmen
+   DEFINE[Status Initial]: Gewinn  AS Bedarfs-Einnahmen - Entwicklungs-Kosten
+   PREMISE[Status Initial]: Bedarfs-Einnahmen kommen von möglichen (direkten) Nutznießern der Software
+   PREMISE[Status Initial]: Bei geringerem Gewinn, kann das erparte Geld an anderen Stelle in Stand der Technik eingezahlt werden
+THESIS[Status Valid]: Freie Software ist schlecht
+   THESIS[Status Proposed]: ..., weil unnötige Codeverdoppelnug produziert
+   THESIS[Status Falsified]: ..., weil kein zuverlässiger Support existiert
+      THESIS[Status Falsified]: Wo keine Einnahmen für Support, da ist kein Support
+         COUNTEREXAMPLE[Status Verified]: Ubuntu-Users
+         COUNTEREXAMPLE[Status Verified]: IRC/Chat	freenode #linux , #ubuntu, #apache, #firefox  ...
+         COUNTEREXAMPLE[Status Verified]: Mailingtlisten
+         LOGIC[Status Verified]: These widerlegt
+   THESIS[Status Proposed]: ..., weil Werbung nutzlos wird
+   THESIS[Status Falsified]: ..., weil sie den Wettbewerbsvorteil raubt
+      THESIS[Status Falsified]: Freie Software ist schlecht, weil derzeitige Unternehmen ihren Wettbewerbsvorteil verlieren
+         PREMISE[Status Falsified]: Freie Software ersetzt immer Software die bereits als proprietäre zur Verfügung steht
+         PREMISE[Status Verified]: Freie Software ersetzt manchmal Software die bereits als proprietäre zur Verfügung steht
+            PREMISE[Status Verified]: GNU ersetzt (Unix) Betriebssystem-Software
+         PREMISE[Status Falsified]: Wenn der Wettbewerbsvorteil wegfällt, ist das Unternehmen dem Ruin geweiht
+            PREMISE[Status Verified]: Das Unternehmen kann/muss sich umstellen
+               PREMISE[Status Verified]: Freie Software macht Funktionalität verfübar und macht dort Wettbewerb unnötig
+            PREMISE[Status Verified]: Umstellung gehört zum Geschäft
+            PREMISE[Status Verified]: Unternehmensuntergänge gehören zur reinigenden Funktion des freien Marktes
+         LOGIC[Status Falsified]: These bestätigt
+   THESIS[Status Falsified]: ..., weil Kreative einen gerechten Lohn verdienen
+      THESIS[Status Falsified]: freie Software nimmt Programmierern die Belohnung für ihre kreativschaffende Tätigkeit
+         PREMISE[Status Falsified]: Copyright ist eine Belohnung fürs Individuum
+            PREMISE[Status Falsified]: Copyright schützt Autoren vor dem Diebstahl einer Idee
+               PREMISE[Status Verified]: Zweck des Copyrights war es Autoren zu ermutigen unter der Bedingung, dass dies dem Gemeinwohl zuträglich ist
+               PREMISE[Status Verified]: Es hat sich herausgestellt, dass Copyright ein Monopol aufs Kopieren ist 
+               PREMISE[Status Verified]: Das Monopol widerspricht dem freien Markt
+               PREMISE[Status Verified]: Das Monopol schadet dem Gemeinwohl
+               PREMISE[Status Verified]: Es gibt keine Autoren-Gewerkschaften, die Copyright einfordern
+                  PREMISE[Status Verified]: Auch vor dem Copyright gab es Innovationen
+               LOGIC[Status Verified]: Copyright schützt nicht wirklich Autoren
+            PREMISE[Status Verified]: Copyright ermutigt Autoren Werke zu veröffentlichen
+            LOGIC[Status Falsified]: Copyright ist eine Belohnung
+         PREMISE[Status Verified]: freie Software hebt Copyright auf
+         LOGIC[Status Falsified]: freie Software hebt die Belohnung auf
+   THESIS[Status Verified]: ..., weil Programmierer verhungern müssten
+      THESIS[Status Verified]: Programmierer freier Software verhungern zwangsläufig
+         PREMISE[Status Verified]: Programmierer können nur als Programmierer Geld verdienen
+            COUNTEREXAMPLE[Status Initial]: Viele Programmierer freier Software verdienen ihr Geld als Administratoren
+         PREMISE[Status Verified]: Mit freier Software macht man kein Geld, um davon Essen kaufen zu können
+            COUNTEREXAMPLE[Status Initial]: FSF / REDHAT verdienen ihr Geld mit freier Software (Serviceleistung)
+         PREMISE[Status Verified]: Wer kein Geld für Essen hat muss verhungern
+            COUNTEREXAMPLE[Status Initial]: In manchen Ländern gibt es ein soziales Netz
+         LOGIC[Status Verified]: These bestätigt
+      LOGIC[Status Verified]: These bestätigt
+   THESIS[Status Falsified]: ..., weil sie das Recht auf Selbstbestimmung nimmt
+      THESIS[Status Falsified]: Freie Software ist schlecht, weil sie die Kontrolle über das Eigene zerstört 
+         THESIS[Status Verified]: Kontrolle über das Eigene wird durch freie Software aufgehoben
+            PREMISE[Status Verified]: Eigene Werke gehören zum Eigenen
+            PREMISE[Status Verified]: Copyright stellt eine Kontrolle über ein Werk dar 
+            PREMISE[Status Verified]: Copyright wird durch freie Software aufgehoben
+            LOGIC[Status Verified]: Kontrolle über das Eigene wird durch freie Software aufgehoben
+         PREMISE[Status Verified]: Freie Software hebt auch die Kontrolle über Eigenes von anderen auf
+            PREMISE[Status Verified]: Copyright stellt eine Kontrolle über ein Werk dar 
+               PREMISE[Status Verified]: Erschaffenes gehört dem Erschaffer
+               PREMISE[Status Verified]: Unabhängig erschaffenes Gehört jedem Erschaffer (Eigenes wird Gemeinsames)
+               PREMISE[Status Verified]: Zusicherung der Kontrolle über das Gemeinsame an eine Person verletzt Kontrolle über das Eigene des anderen Erschaffers
+               LOGIC[Status Verified]: Copyright lässt Kontrolle über das Eigene und über das Eigene von anderen
+         LOGIC[Status Verified]: Es ist sogar gut, dass diese Art der Kontrolle aufgehoben wird
+   THESIS[Status Proposed]: ..., weil sie geistiges Eigentum verschenkt
+   THESIS[Status Verified]: ..., weil der Wettbewerb alles besser macht
+      THESIS[Status Verified]: Freie Software ist schlechter als proprietäre Software
+         PREMISE[Status Initial]: Freie Software basiert auf Kooperation
+         PREMISE[Status Initial]: Proprietäre Software basiert auf dem Wettbewerb
+         PREMISE[Status Initial]: Der Wettbewerb sorgt für bessere Ergebnisse als die Kooperation
+            PREMISE[Status Initial]: Es gibt Unternehmen, die die Belohnung (Individual-Gewinn) wichtiger nehmen als das Gemeinwohl
+            PREMISE[Status Initial]: Der Wettbewerb ist legitim, wenn er um des Gemeinwohls willen belohnt
+            PREMISE[Status Initial]: Derzeit belohnt der Wettbewerb zur Steigerung des Gemeinwohls (ist ein Anreizsystem)
+            PREMISE[Status Initial]: Wenn die Belohnung wichtiger genommen wird als das Ziel wird das Ziel verfehlt
+            LOGIC[Status Initial]: Wettbewerb sorgt immer/unter allen Umständen für bessere Ergebnisse
+         LOGIC[Status Initial]: These bestätigt
+   THESIS[Status Proposed]: ..., weil Geld der einzige Anreiz ist
+   THESIS[Status Proposed]: ..., weil Nutzer gehorsam sein müssen
+   THESIS[Status Proposed]: ..., weil sie die Lebensgrundlage raubt
+   LOGIC[Status Initial]: These bestätigt

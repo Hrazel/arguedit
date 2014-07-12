@@ -1,0 +1,10 @@
+THESIS[Status Initial]: Freie Software ist schlecht, weil ihre Programmierer dann verhungern müssen
+   THESIS[Status Initial]: Programmierer freier Software verhungern zwangsläufig
+      PREMISE[Status Initial]: Programmierer können nur als Programmierer Geld verdienen
+         COUNTEREXAMPLE[Status Initial]: Viele Programmierer freier Software verdienen ihr Geld als Administratoren
+      PREMISE[Status Initial]: Mit freier Software macht man kein Geld, um davon Essen kaufen zu können
+         COUNTEREXAMPLE[Status Initial]: FSF / REDHAT verdienen ihr Geld mit freier Software (Serviceleistung)
+      PREMISE[Status Initial]: Wer kein Geld für Essen hat muss verhungern
+         COUNTEREXAMPLE[Status Initial]: In manchen Ländern gibt es ein soziales Netz
+      LOGIC[Status Initial]: These bestätigt
+   LOGIC[Status Initial]: These bestätigt

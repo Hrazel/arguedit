@@ -1,0 +1,10 @@
+THESIS[Status Falsified]: Freie Software ist schlecht, weil derzeitige Unternehmen ihren Wettbewerbsvorteil verlieren
+   PREMISE[Status Falsified]: Freie Software ersetzt immer Software die bereits als proprietäre zur Verfügung steht
+   PREMISE[Status Verified]: Freie Software ersetzt manchmal Software die bereits als proprietäre zur Verfügung steht
+      PREMISE[Status Verified]: GNU ersetzt (Unix) Betriebssystem-Software
+   PREMISE[Status Falsified]: Wenn der Wettbewerbsvorteil wegfällt, ist das Unternehmen dem Ruin geweiht
+      PREMISE[Status Verified]: Das Unternehmen kann/muss sich umstellen
+         PREMISE[Status Verified]: Freie Software macht Funktionalität verfübar und macht dort Wettbewerb unnötig
+      PREMISE[Status Verified]: Umstellung gehört zum Geschäft
+      PREMISE[Status Verified]: Unternehmensuntergänge gehören zur reinigenden Funktion des freien Marktes
+   LOGIC[Status Falsified]: These bestätigt

@@ -1,0 +1,8 @@
+These: Es gibt keinen Grund Unfreunden Nutzen zu spenden.
+  Definiere: Unfreund als ein nicht Freund seiender
+  G: Gegenbeispiel 
+    P1: Der Lehrer des Arztes meiner Kinder ist ein Unfreund.
+    P2: Der Lehrer des Arztes meiner Kinder nützt mir indirekt.
+    P3: Wenn ich dem Lehrer des Arztes meiner Kinder nütze, nützt das auch mir.
+    Logik: P1 && P2 && P3 => Es gibt Grund: Einem Unfreund Nutzen zu spenden. 
+These: Wissen ist niemals schlecht.

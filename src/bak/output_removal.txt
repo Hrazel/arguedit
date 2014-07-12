@@ -1,0 +1,6 @@
+These: Es gibt kein Grund Unfreunden Nutzen zu spenden.
+   Definiere: Unfreund als Ein nicht Freund seiender
+These: Wissen an sich ist niemals schlecht.
+Definiere: FreeSoftware als Software, mit der die Freiheit des Menschen bezweckt wird
+   Definiere: OpenSourceSoftware als Software mit für jedermann einsehbarem Quellcode
+   Definiere: Freeware als Kostenlos benutzbare Software

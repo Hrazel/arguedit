@@ -1,0 +1,13 @@
+THESIS[Status Initial]: Freie Software ist schlecht, weil sie die Kontrolle über das Eigene zerstört 
+   THESIS[Status Initial]: Kontrolle über das Eigene wird durch freie Software aufgehoben
+      PREMISE[Status Initial]: Eigene Werke gehören zum Eigenen
+      PREMISE[Status Initial]: Copyright stellt eine Kontrolle über ein Werk dar 
+      PREMISE[Status Initial]: Copyright wird durch freie Software aufgehoben
+      LOGIC[Status Initial]: Kontrolle über das Eigene wird durch freie Software aufgehoben
+   PREMISE[Status Initial]: Freie Software hebt auch die Kontrolle über Eigenes von anderen auf
+      PREMISE[Status Initial]: Copyright stellt eine Kontrolle über ein Werk dar 
+         PREMISE[Status Initial]: Erschaffenes gehört dem Erschaffer
+         PREMISE[Status Initial]: Unabhängig erschaffenes Gehört jedem Erschaffer (Eigenes wird Gemeinsames)
+         PREMISE[Status Initial]: Zusicherung der Kontrolle über das Gemeinsame an eine Person verletzt Kontrolle über das Eigene des anderen Erschaffers
+         LOGIC[Status Initial]: Copyright lässt Kontrolle über das Eigene und über das Eigene von anderen
+   LOGIC[Status Initial]: Es ist sogar gut, dass diese Art der Kontrolle aufgehoben wird

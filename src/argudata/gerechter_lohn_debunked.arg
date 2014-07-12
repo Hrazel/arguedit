@@ -1,0 +1,14 @@
+THESIS[Status Falsified]: freie Software nimmt Programmierern die Belohnung für ihre kreativschaffende Tätigkeit
+   PREMISE[Status Falsified]: Copyright ist eine Belohnung fürs Individuum
+      PREMISE[Status Falsified]: Copyright schützt Autoren vor dem Diebstahl einer Idee
+         PREMISE[Status Verified]: Zweck des Copyrights war es Autoren zu ermutigen unter der Bedingung, dass dies dem Gemeinwohl zuträglich ist
+         PREMISE[Status Verified]: Es hat sich herausgestellt, dass Copyright ein Monopol aufs Kopieren ist 
+         PREMISE[Status Verified]: Das Monopol widerspricht dem freien Markt
+         PREMISE[Status Verified]: Das Monopol schadet dem Gemeinwohl
+         PREMISE[Status Verified]: Es gibt keine Autoren-Gewerkschaften, die Copyright einfordern
+            PREMISE[Status Verified]: Auch vor dem Copyright gab es Innovationen
+         LOGIC[Status Verified]: Copyright schützt nicht wirklich Autoren
+      PREMISE[Status Verified]: Copyright ermutigt Autoren Werke zu veröffentlichen
+      LOGIC[Status Falsified]: Copyright ist eine Belohnung
+   PREMISE[Status Verified]: freie Software hebt Copyright auf
+   LOGIC[Status Falsified]: freie Software hebt die Belohnung auf

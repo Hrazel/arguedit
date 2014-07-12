@@ -1,0 +1,22 @@
+T: Knowledge is never bad
+  R: There is knowledge used for good things
+  C: There is rejection of knowledge
+    Q: Rejection because of knowing that a knowledge is bad?
+    P: Please rephrase.
+    Q: Does the one who rejects the knowledge know that it is bad?
+        A: Yes
+            Q: Then how does one know that it is bad?
+    Q: Rejection because of not knowing?
+        A: Yes
+            Q: Then is really knowledge to blame here?    
+  C: The knowledge for warfare is bad
+    Q: Is it bad because of bad consequences?
+        A: Yes
+            Q: If someone who has got that "bad" knowledge and knows about its badness does he use it?
+                A: Y
+                    Ref: Q("Does anyone choose the action known as bad?")
+                A: N
+                    Q: Then despite having bad knowledge there are none of the bad consequences?
+
+
+{ T=Thesis; R=rational,ProArgument; C=Contra,CounterExample; Q=Question; P=Plea; A=Answer; }

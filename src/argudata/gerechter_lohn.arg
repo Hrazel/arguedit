@@ -1,0 +1,7 @@
+THESIS[Status Verified]: freie Software nimmt Programmierern die Belohnung für ihre kreativschaffende Tätigkeit
+   PREMISE[Status Verified]: Copyright ist eine Belohnung
+      PREMISE[Status Verified]: Copyright schützt Autoren vor dem Diebstahl einer Idee
+      PREMISE[Status Verified]: Ermutigt Autoren Werke zu veröffentlichen
+      LOGIC[Status Verified]: Copyright ist eine Belohnung
+   PREMISE[Status Verified]: freie Software hebt Copyright auf
+   LOGIC[Status Verified]: freie Software hebt die Belohnung auf

@@ -1,0 +1,56 @@
+module  Specification.Argumentation
+    where
+
+    data Text view = Text view String
+        deriving(Read, Show)
+    data Term view = Term view String
+        deriving(Read, Show)
+
+    data Attributes = Label String | Author String 
+        deriving(Read,Show)
+ 
+    data Meta view = NoMeta | Meta view [Attributes]
+        deriving(Read,Show)
+
+    -- HType is the component's actual type
+    data Pure view = Thesis (Text view )
+        | Definition (Term view) (Text view ) 
+        | CounterExample 
+        | Rationale 
+        | Predicate
+        deriving(Read, Show)
+
+    -- Header is a HType + Text + Meta information
+    data Header view b = Header b (Pure view )  (Meta view )
+        deriving(Read,Show)
+
+    -- Content is arbitrary Argumentation compontents
+    data Content view b = Content b [( ArgComp view b )] ( Meta view )
+        deriving(Read, Show)
+
+    -- Argumentation component is Header + Content
+    data ArgComp view b = ArgComp b ( Header view b ) ( Content view b ) 
+         deriving(Read,Show)
+
+    data Found view = FoundNothing | Found view
+
+    -- add as a sub component
+    addToArgComp (ArgComp b h c ) comp = (ArgComp b h (addToContent c comp))
+    -- add to a list in fact
+    addToContent (Content b l m ) comp = (Content b (comp:l) m )
+    addListToContent (Content b l m ) ls = (Content b (l ++ ls) m )
+
+    blankContent             = Content Nothing [] NoMeta
+    thesisNew textStr        = ArgComp Nothing (Header Nothing (Thesis       (Text Nothing textStr))                         NoMeta ) blankContent
+    defNew termStr descrStr  = ArgComp Nothing (Header Nothing (Definition   (Term Nothing termStr)(Text Nothing descrStr))  NoMeta ) blankContent 
+
+    mt1 = Meta "MetaTwin" [Label "defaultMeta", Author "its me"]
+    argumentationdata = Content (Just 1) [] NoMeta --init
+
+    argcomp1 = ArgComp (Just 100) (Header (Just 1) (Thesis      (Text (Just "TextTwin") "Mythesis"))                                    NoMeta ) blankContent 
+    argcomp2 = ArgComp (Just 200) (Header (Just 2) (Definition  (Term (Just "termid") "the term" ) (Text (Just "textid")  "myterm") )   NoMeta ) blankContent 
+
+    argcomp3 = addToArgComp argcomp1 argcomp2 
+
+    test_argumentation = addToContent argumentationdata ( argcomp3 )
+    

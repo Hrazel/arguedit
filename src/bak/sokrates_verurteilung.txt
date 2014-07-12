@@ -1,0 +1,20 @@
+THESIS[Status Valid]: Sokrates wurde zu Unrecht verurteilt
+   THESIS[Status Valid]: Anklagepunkt 1: Sokrates frevele, in dem er nicht an Götter glaube, sondern an Dämonisches
+      PREMISE[Status Valid]: Dämonisches ist etwas von Dämonen
+      PREMISE[Status Valid]: Dämonen sind Kinder von Göttern
+      PREMISE[Status Valid]: Zwischenparaphrase: Sokrates frevele, indem er nicht an Götter glaube, sondern an etwas von Kindern von Göttern
+      PREMISE[Status Valid]: Man kann nicht an Dinge von etwas anderem glauben, ohne auch an dieses Andere zu glauben
+      PREMISE[Status Valid]: Paraphrasierte Anklage: Sokrates frevele, indem er nicht an Götter, sondern an Götter glaube
+      PREMISE[Status Verified]: Etwas kann nicht in einer Hinsicht sein und in genauer dieser Hinsicht gerade nicht sein
+      PREMISE[Status Verified]: Niemand ist aufgrund einer sich selbst widersprechenden Anklage zu verurteilen
+      LOGIC[Status Valid]: Anklagepunkt ist fallen zu lassen
+   THESIS[Status Falsified]: Anklagepunkt 2: Sokrates verderbe die Jugendlichen  
+      PREMISE[Status Verified]: Einige Athener sind genervt von den Fragen der Jungendlichen, die sie seit Begegnung mit Sokrates stellen         
+      PREMISE[Status Valid]: Die Jugendlichen hätten sich sonst anders verhalten
+      THESIS[Status Falsified]: Sokrates ist die Ursache des Genervt-Seins
+         PREMISE[Status Verified]: Den Jugendlichen macht es Spaß Sokrates nachzuahmen
+         PREMISE[Status Verified]: Die Jugendlichen machen genau das, was Sokrates tut
+         PREMISE[Status Falsified]: Die Genervten sind nicht Schuld an ihrem Genervt-Sein 
+         LOGIC[Status Falsified]: Sokrates ist Ursache
+   PREMISE[Status Verified]: Sokrates wurde aufgrund der genannten Anklage zum Tode verurteilt
+   LOGIC[Status Valid]: Sokrates wurde zu Unrecht verurteilt

@@ -1,0 +1,37 @@
+THESIS[Status Falsified]: Freie Software ist schlecht
+   PREMISE[Status Initial]: Y ist an sich gut
+      PREMISE[Status Valid]: Y muss in Bezug auf Software immer angewendet werden
+      PREMISE[Status Valid]: Freie Software verbreitet sich durch Weitergabe (z.B. über das Internet)
+      PREMISE[Status Valid]: Y verliert den eigenen Zweck wenn Software "befreit" wird
+         PREMISE[Status Verified]: Was etwas an sich gutes schlecht werden lässt, kann nicht gut sein
+            LOGIC[Status Valid]: Freie Software ist schlecht
+         PREMISE[Status Initial]: Was den eigenen Zweck verlieren kann, kann nicht an sich gut sein
+            LOGIC[Status Valid]: Prämisse Y an sicht gut  ist im Widerspruch
+THESIS[Status Initial]: freie Software beeinträchtigt Y
+   DEFINE[Status Initial]: Werbung    AS Das Schmackhaft-Machen eines kaufbaren Gutes
+   PREMISE[Status Initial]: GNU kostenlos und Verbreitungs-Dienst unter Verwendung von Y  sind Erfolgreich
+      LOGIC[Status Initial]: Kosten für Y sind gedeckt
+   PREMISE[Status Initial]: Verbreitungs-Dienst nicht erfolgreich
+      LOGIC[Status Initial]: Y war nicht notwendig
+THESIS[Status Initial]: Wo keine Einnahmen für Support, da ist kein Support
+   COUNTEREXAMPLE[Status Initial]: Ubuntu-Users
+   COUNTEREXAMPLE[Status Initial]: IRC/Chat	freenode #linux , #ubuntu, #apache, #firefox  ...
+   COUNTEREXAMPLE[Status Initial]: Mailingtlisten
+   LOGIC[Status Initial]: These Widerlegt
+THESIS[Status Initial]: Freie Software ist kostenlos
+   DEFINE[Status Initial]: Freie Software (nach FSF)   AS Software, die folgenden Freiheiten ermöglicht . 0. Freiheit: Die Freiheit ein Programm zu jeglichem Zweck ausführen zu dürfen 1. Freiheit: Die Freiheit das Programm studieren und ändern zu dürfen, um es tun zu lassen, was Sie sich von dem Programm wünschen. Die Möglichkeit der Einsichtnahme in den Quellecode ist dazu eine Vorbedingung. 2. Freiheit: Die Freiheit zur Weitergabe von Kopien, damit Sie ihrem Nachbarn helfen können. 3. Freiheit: Die Freiheit zur Weitergabe der modifizierten Versionen an andere. Zugriff auf den Quelltext ist hierzu Vorbedingung.
+   DEFINE[Status Initial]: Freie Software (JMS)   AS Software, mit der die Freiheit des Menschen bezweckt ist
+   PREMISE[Status Initial]: Zitate: "give away free","just like air"
+      COUNTEREXAMPLE[Status Initial]: "people often interpret them as saying that copies of GNU should always be distributed at little or no charge. That was never the intent." "The intention was that nobody would have to pay for *permission* to use the GNU system. "
+      LOGIC[Status Initial]: Freie Software nicht unbedingt kostenlos
+THESIS[Status Initial]: Stand der Technik ist besser als er ist, wenn es mehr freie Software gäbe
+   PREMISE[Status Initial]: FS ist Codeverdopplung
+   PREMISE[Status Initial]: Verschenken worfür Resourcen aufgewndet wurden
+   PREMISE[Status Initial]: Lohndumping bei der konkurrenz
+   LOGIC[Status Initial]: Stand wäre sogar schlechter
+THESIS[Status Initial]: Es gibt reale Schäden durch proprietäre Software
+   PREMISE[Status Initial]: Propietäre Software sorgt dafür, dass in der Menge aller Menschen Software (Teile) mehrfach produziert werden müssen
+   PREMISE[Status Initial]: Entwicklungs-Kosten < Bedarfs-Einnahmen
+   DEFINE[Status Initial]: Gewinn  AS Bedarfs-Einnahmen - Entwicklungs-Kosten
+   PREMISE[Status Initial]: Bedarfs-Einnahmen kommen von möglichen (direkten) Nutznießern der Software
+   PREMISE[Status Initial]: Bei geringerem Gewinn, kann das erparte Geld an anderen Stelle in Stand der Technik eingezahlt werden

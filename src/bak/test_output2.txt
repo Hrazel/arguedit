@@ -1,0 +1,11 @@
+These: Es gibt kein Grund Unfreunden Nutzen zu spenden.
+   Definiere: Unfreund als Ein nicht Freund seiender
+   G: Ein Gegenbeispiel
+      Premisse: Der Lehrer des Arztes meiner Kinder ist ein Unfreund.
+      Premisse: Der Lehrer des Arztes meiner Kinder nützt mir indirekt.
+      Premisse: Wenn ich dem Lehrer des Arztes meiner Kinder nütze, nützt das auch mir.
+      Logik: P1 && P2 && P3 -> E(Grund) : Einem Unfreund Nutzen zu spenden. 
+These: Wissen an sich ist niemals schlecht.
+Definiere: FreeSoftware als Software, mit der die Freiheit des Menschen bezweckt wird
+   Definiere: OpenSourceSoftware als Software mit für jedermann einsehbarem Quellcode
+   Definiere: Freeware als Kostenlos benutzbare Software

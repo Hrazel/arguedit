@@ -1,0 +1,4 @@
+THESIS[Status Initial]: schickes outfit
+   DEFINE[Status Initial]: Definiens AS Definiendum
+   PREMISE[Status Initial]: Eine neue Prämisse
+   LOGIC[Status Proposed]: Eine neuer Schluss

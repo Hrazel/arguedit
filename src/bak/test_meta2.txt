@@ -1,0 +1,4 @@
+THESIS [Status Valid]:test these 3 meta xxx
+	PREMISE[Status Verified]: Hiervon geht man aus
+	PREMISE[Status Verified]: Hiervon geht man auch aus
+

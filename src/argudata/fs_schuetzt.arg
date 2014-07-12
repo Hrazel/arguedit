@@ -1,0 +1,8 @@
+THESE: freie Software schützt die Bevölkerung
+   DEFINIERE: freie Software = Software mit offene Quellen
+   THESE: Kontrollmechanismen werden im Programmcode versteckt
+      PRÄMISSE: Nur überprüfbar, wenn Quellen offengelegt
+      PRÄMISSE: leichter und für jedermann überprüfbar, wenn quellen offengelegt
+      SCHLUSS: Offenlegung der Quellen sorgt für Kontrolle in öffentlicher Hand
+   PRÄMISSE: Kontrolle in öffentlicher Hand sorgt für den Schutz der Bevölkerung vor Misbrauch
+   SCHLUSS: freie Software sorgt für den Schutz der Bevölkerung

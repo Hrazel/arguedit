@@ -1,0 +1,5 @@
+THESIS[Status Initial]: test
+   THESIS[Status Initial]: Neue These
+   DEFINE[Status Initial]: Definiens AS Definiendum
+   PREMISE[Status Initial]: Eine neue Prämisse
+   LOGIC[Status Initial]: Eine neuer Schluss

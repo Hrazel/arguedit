@@ -1,0 +1,4 @@
+DEFINE[Status Falsified]: Freundschaft AS Tun lassen, was immer der Andere will
+   PREMISE[Status Verified]: Eltern sind Freunde der Kinder
+   PREMISE[Status Verified]: Eltern lassen das Kind nicht immer tun, was es will
+   LOGIC[Status Verified]: Definition ist zu verwerfen

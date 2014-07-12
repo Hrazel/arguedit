@@ -1,0 +1,41 @@
+THESE: Freie Software ist schlecht
+   PRÄMISSE: Y ist an sich gut
+      PRÄMISSE: Y muss in Bezug auf Software immer angewendet werden
+      PRÄMISSE: Freie Software verbreitet sich durch Weitergabe (z.B. über das Internet)
+      PRÄMISSE: Y verliert den eigenen Zweck wenn Software "befreit" wird
+         PRÄMISSE: Was etwas an sich gutes schlecht werden lässt, kann nicht gut sein
+            SCHLUSS: Freie Software ist schlecht
+         PRÄMISSE: Was den eigenen Zweck verlieren kann, kann nicht an sich gut sein
+            SCHLUSS: Prämisse Y an sicht gut  ist im Widerspruch
+THESE: freie Software beeinträchtigt Y
+   DEFINIERE: Werbung   = Das Schmackhaft-Machen eines kaufbaren Gutes
+   PRÄMISSE: GNU kostenlos und Verbreitungs-Dienst unter Verwendung von Y  sind Erfolgreich
+      SCHLUSS: Kosten für Y sind gedeckt
+   PRÄMISSE: Verbreitungs-Dienst nicht erfolgreich
+      SCHLUSS: Y war nicht notwendig
+THESE: Wo keine Einnahmen für Support, da ist kein Support
+   GEGENBEISPIEL: Ubuntu-Users
+   GEGENBEISPIEL: IRC/Chat	freenode #linux , #ubuntu, #apache, #firefox  ...
+   GEGENBEISPIEL: Mailingtlisten
+   SCHLUSS: These Widerlegt
+THESE: Freie Software ist kostenlos
+   DEFINIERE: Freie Software (nach FSF)  = Software, die Ausübun vier bestimmter Freiheiten ermöglicht. 
+      DEFINIERE: Freiheit 0. = Die Freiheit ein Programm zu jeglichem Zweck ausführen zu dürfen.
+      DEFINIERE: Freiheit 1. = Die Freiheit das Programm studieren und ändern zu dürfen, um es tun zu lassen, was Sie sich von dem Programm wünschen. Die Möglichkeit der Einsichtnahme in den Quellecode ist dazu eine Vorbedingung. 
+      DEFINIERE: Freiheit 2. = Die Freiheit zur Weitergabe von Kopien, damit Sie ihrem Nachbarn helfen können.
+      DEFINIERE: Freiheit 3. = Die Freiheit zur Weitergabe der modifizierten Versionen an andere. Zugriff auf den Quelltext ist hierzu Vorbedingung.
+   DEFINIERE: Freie Software (JMS)  = Software, mit der die Freiheit des Menschen bezweckt ist
+   PRÄMISSE: Zitate: "give away free","just like air"
+      GEGENBEISPIEL: "people often interpret them as saying that copies of GNU should always be distributed at little or no charge. That was never the intent." "The intention was that nobody would have to pay for *permission* to use the GNU system. "
+      SCHLUSS: Freie Software nicht unbedingt kostenlos
+THESE: Stand der Technik ist besser als er ist, wenn es mehr freie Software gäbe
+   PRÄMISSE: FS ist Codeverdopplung
+   PRÄMISSE: Verschenken worfür Resourcen aufgewndet wurden
+   PRÄMISSE: Lohndumping bei der konkurrenz
+   SCHLUSS: Stand wäre sogar schlechter
+THESE: Es gibt reale Schäden durch proprietäre Software
+   PRÄMISSE: Propietäre Software sorgt dafür, dass in der Menge aller Menschen Software (Teile) mehrfach produziert werden müssen
+   PRÄMISSE: Entwicklungs-Kosten < Bedarfs-Einnahmen
+   DEFINIERE: Gewinn = Bedarfs-Einnahmen - Entwicklungs-Kosten
+   PRÄMISSE: Bedarfs-Einnahmen kommen von möglichen (direkten) Nutznießern der Software
+   PRÄMISSE: Bei geringerem Gewinn, kann das erparte Geld an anderen Stelle in Stand der Technik eingezahlt werden

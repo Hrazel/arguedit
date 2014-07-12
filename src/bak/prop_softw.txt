@@ -1,0 +1,22 @@
+These: Proprietary Software produziert Aufwandsverschwendung
+Definiere: Aufwandsverschwendung = unzweckmäßiger Aufwand
+    Definiere: Zweck von Software = Wohlstand aller Menschen (Egalitarismus)
+        Prämisse: Propietäre Software dient nur einer bestimmten Gruppe von Menschen
+        Schluss: Prop. Software produziert Aufwandsverschwendung
+    Definiere: Zweck von Software = Wohlstand der Leistungsträger (Meritokratisch)
+
+These: unterstützer proprietärer Software sind böse
+    Definiere: Böse sein = absichtlich das Schlechte tun
+    Definiere: Das Schlechte = Negation des Bestmöglichen (Idealismus)
+    Prämisse: proprietäre Software zu unterstützen ist (absolut) schlecht
+        Schluss: absichtlich  prop. SW unterstützen ist böse
+    Prämisse: Die Maßstäbe des Handelnden sind Maßgeblich für das Urteil von Gut und Schlecht
+    Prämisse: Ereignisse sind eindeutig vorherbestimmt (determinismus)
+        Schluss: Es gibt keinen freien Willen
+        Schluss: Wenn es keinen freien Willen gibt, dann handelt man nicht absichtlich
+        Schluss: Selbst wenn prop. SW schlecht ist, dann ist ihre Unterstützung nicht böse 
+    Prämisse: Niemand kann bewusst und sofern er Handelnder ist das schlechte tun
+        Schluss: absichtlich das Schlechte tun ist unmöglich
+        Schluss: es gibt kein böses Handeln
+        Schluss: prop. SW zu unterstützen kann nicht böse sein (höchstens schlecht)
+

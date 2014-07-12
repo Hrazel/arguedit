@@ -1,0 +1,14 @@
+These: Freie Software ist schlecht
+   Prämisse: Y ist an sich gut
+      Prämisse: Y muss in Bezug auf Software immer angewendet werden
+      Prämisse: Freie Software verbreitet sich durch Weitergabe (z.B. über das Internet)
+      Prämisse: Y verliert den eigenen Zweck wenn Software "befreit" wird
+         Prämisse: Was etwas an sich gutes schlecht werden lässt, kann nicht gut sein
+            Schluss: Freie Software ist schlecht
+         Prämisse: Was den eigenen Zweck verlieren kann, kann nicht an sich gut sein
+These: freie Software beeinträchtigt Y
+   Definiere: Werbung = Das Schmackhaft-Machen eines kaufbaren Gutes
+   Prämisse: GNU kostenlos und Verbreitungs-Dienst unter Verwendung von Y  sind Erfolgreich
+      Schluss: Kosten für Y sind gedeckt
+   Prämisse: Verbreitungs-Dienst nicht erfolgreich
+      Schluss: Y war nicht notwendig
